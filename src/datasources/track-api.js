@@ -3,10 +3,10 @@ const HttpsProxyAgent = require('https-proxy-agent');
 
 class TrackAPI extends RESTDataSource {
 
-  willSendRequest(request) {
-    request.agent = new HttpsProxyAgent('http://http.proxy.fmr.com:8000')
-  }
-  
+  // willSendRequest(request) {
+  //   request.agent = new HttpsProxyAgent('http://http.proxy.fmr.com:8000')
+  // }
+
   constructor() {
     super();
     // the Catstronauts catalog is hosted on this server
